@@ -1,0 +1,11 @@
+
+
+Name        URL            HTTP Verb        Description                 Mongoose Method
+=============================================================================================
+INDEX       /dogs           GET         Display all dogs                    dog.find()
+NEW         /dogs/new       GET         Display form to make new dog        N/A
+CREATE      /dogs           POST        Add new Dog to DB                   dog.create()
+SHOW        /dogs/:id       GET         Show info of one dog                dog.findById()
+EDIT        /dogs/:id/edit  GET         Show edit form                      dog.findById()
+UPDATE      /dogs/:id       PUT         Update particular dog               dog.findByIdAndUpdate()
+DELETE      /dogs/:id       DELETE      Delete particular dog               dog.findByIdAndDelete()
